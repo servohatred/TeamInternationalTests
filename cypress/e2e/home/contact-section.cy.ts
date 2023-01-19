@@ -1,7 +1,7 @@
 import ContactComponent from "./page-objects/contact-component.po";
 import HomePage from "./page-objects/home-page.po";
 
-describe("Team International Landing Page - Tests for Career section", () => {
+describe("Team International Landing Page - Tests for Contact section", () => {
   let homePage : HomePage
   let contactSection : ContactComponent
   beforeEach(() => {

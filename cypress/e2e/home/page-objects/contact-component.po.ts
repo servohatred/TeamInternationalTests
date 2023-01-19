@@ -20,7 +20,7 @@ export default class ContactComponent {
     cy.get(Selectors.SECTION).find(Selectors.LABEL).should("be.visible");
   }
   fillOutForm() {
-    cy.wait(2000)
+    cy.wait(5000)
     this.getFormIframe()
       .find(Selectors.FIRST_NAME)
       .should("be.visible")
@@ -37,7 +37,6 @@ export default class ContactComponent {
       .find(Selectors.EMAIL)
       .should("be.visible")
       .type("Test@mail.com");
-    this.getFormIframe()
     this.getFormIframe()
       .find(Selectors.PHONE)
       .should("be.visible")
@@ -63,7 +62,7 @@ export default class ContactComponent {
       .get('iframe[title="Candidates Form"][class*="entered"]')
       .its("0.contentDocument.body")
       .then(cy.wrap)
-      .find('community_layout-section')
+      .find('webruntime-router-container')
       .find('lightning-layout-item');
   }
 }
