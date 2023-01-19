@@ -1,5 +1,3 @@
-import { eq } from "cypress/types/lodash";
-
 class Selectors {
   static readonly TITLE = 'h2[class*="white-text"]';
   static readonly LABEL = 'p[class*="white-text"]';

@@ -8,11 +8,8 @@ describe("Team International Landing Page - Tests for Clients section", () => {
     homePage = new HomePage();
     clientsSection = homePage.goToClientsSection();
   });
-    // { sectionName: "Locations" },
-    // { sectionName: "Top Gun Lab" },
-    // { sectionName: "Empower Your Career" },
 
-    it(`Verify solution title exist `, () => {
+    it(`Verify title exist `, () => {
       clientsSection.validateTitle();
     });
 

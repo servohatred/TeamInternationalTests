@@ -9,7 +9,7 @@ describe("Team International Landing Page - Tests for Services section", () => {
     servicesSection = homePage.goToServicesSection();
   });
 
-    it(`Verify solution title and label exist `, () => {
+    it(`Verify title and label exist `, () => {
       servicesSection.validateTitle();
       servicesSection.validateLabel();
     });
